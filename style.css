@@ -21,3 +21,38 @@ canvas {
     background-color: rgb(43 64 68 / 85%);
     border-radius: 20px;
 }
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    background-color: rgb(43 64 68 / 85%);
+    border-radius: 20px;
+    min-height: 400px;
+    min-width: 400px;
+    padding: 20px;
+    color: #f4c623b5;
+
+    button {
+        display: flex;
+        width: max-content;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        padding: 10px;
+        background-color: #f4c623b5;
+        color: #20326e;
+        border-radius: 10px;
+        border: none;
+        text-transform: uppercase;
+    }
+}
+
+.result-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}

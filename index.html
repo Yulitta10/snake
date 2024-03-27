@@ -9,7 +9,27 @@
 </head>
 
 <body>
+    <div id="score" class="score" style="display: none">
+        <h1>Score:</h1>
+        <h1 id="score_count">0</h1>
+    </div>
+    <div id="start_game" class="game-start game-container" style="display: flex">
+        <h1>Welcome to Snake</h1>
+        <h3>Press button to start</h3>
+        <button id="start_btn">Start</button>
+    </div>
     <canvas id="gameCanvas" width="400" height="400" style="display: none"></canvas>
+    <div id="game_over" class="game-over game-container" style="display: none;">
+        <h1>Game Over</h1>
+        <div class="game-info">
+            <h3>Press button to restart</h3>
+            <div class="result-info">
+                <h3>Your result of the game:</h3>
+                <h2 id="result_score"></h2>
+            </div>
+        </div>
+        <button id="restart_btn">Restart Game</button>
+    </div>
 
     <script src=" main.js" defer type="module"></script>
 </body>
